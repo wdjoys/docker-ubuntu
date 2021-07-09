@@ -1,6 +1,8 @@
 FROM ubuntu
 
-ENV password=Wwg01269+!
+
+# password 填入
+ENV password=
 
 # 更新源，安装ssh server
 RUN apt-get update && apt-get install -y openssh-server && mkdir /var/run/sshd \
